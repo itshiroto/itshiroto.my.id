@@ -1,6 +1,8 @@
 <script>
-    import 'uno.css'
     import '@unocss/reset/tailwind.css'
+    import 'uno.css'
 </script>
 
-<slot />
+<div class="font-mono">
+    <slot />
+</div>
