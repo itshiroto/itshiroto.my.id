@@ -11,15 +11,17 @@
 	});
 </script>
 
+
 <main
 	class="relative min-h-screen w-full flex items-center justify-center text-white bg-hero-graph-paper-gray-700/35 bg-black overflow-hidden"
 >
 	{#if visible}
 		<div
+			in:fade={{duration: 500, easing: cubicInOut}}
 			class="max-w-screen-xl mx-auto flex gap-6 md:gap-8 p-4 sm:p-8 py-16 flex-col md:flex-row z-10 items-center md:items-stretch"
 		>
 			<img
-				in:fly={{ x: -50, duration: 1000, delay: 500, easing: quintInOut }}
+				in:fly={{ x: -50, duration: 1000, delay: 1000, easing: quintInOut }}
 				out:fade
 				src={MyFace}
 				class="aspect-square max-h-240px md:max-h-inherit md:aspect-auto md:max-w-320px object-cover object-top rounded-full md:rounded-4"
@@ -29,7 +31,7 @@
 				class="bg-black/25 flex-1 rounded-4 p-6 sm:p-8 lg:p-12 border-orange/25 border-1 backdrop-blur-8 flex flex-col justify-between"
 			>
 				<div
-					in:fly={{ x: -50, duration: 1000, delay: 200, easing: quintInOut }}
+					in:fly={{ x: -50, duration: 1000, delay: 500, easing: quintInOut }}
 					class="text-white/80 text-sm sm:text-base"
 				>
 					<Typewriter mode="scramble" scrambleDuration={2000} scrambleSlowdown={false}>
@@ -55,6 +57,7 @@
 					</Typewriter>
 				</div>
 				<div
+					in:fade={{duration: 1500, delay:1500, easing: cubicInOut}}
 					class="mt-16 flex text-2xl items-center justify-center md:justify-start gap-6 flex-wrap"
 				>
 					<a
