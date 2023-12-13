@@ -1,36 +1,24 @@
 {
-	"name": "itshiroto.my.id",
-	"version": "0.0.1",
-	"private": true,
-	"scripts": {
-		"dev": "vite dev",
-		"build": "vite build",
-		"preview": "vite preview",
-		"check": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json",
-		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./jsconfig.json --watch",
-		"lint": "prettier --plugin-search-dir . --check . && eslint .",
-		"format": "prettier --plugin-search-dir . --write ."
-	},
-	"devDependencies": {
-		"@iconify/json": "^2.2.90",
-		"@julr/unocss-preset-heropatterns": "^1.0.2",
-		"@sveltejs/adapter-auto": "^2.0.0",
-		"@sveltejs/kit": "^1.20.4",
-		"@unocss/extractor-svelte": "^0.53.5",
-		"eslint": "^8.28.0",
-		"eslint-config-prettier": "^8.5.0",
-		"eslint-plugin-svelte": "^2.30.0",
-		"prettier": "^2.8.0",
-		"prettier-plugin-svelte": "^2.10.1",
-		"svelte": "^4.0.0",
-		"svelte-check": "^3.4.3",
-		"svelte-typewriter": "^3.1.6",
-		"typescript": "^5.0.0",
-		"unocss": "^0.53.5",
-		"vite": "^4.3.6"
-	},
-	"type": "module",
-	"dependencies": {
-		"@unocss/reset": "^0.53.5"
-	}
+  "name": "",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro check && astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/check": "^0.3.2",
+    "@astrojs/svelte": "^5.0.1",
+    "astro": "^4.0.4",
+    "svelte": "^4.2.8",
+    "typescript": "^5.3.3"
+  },
+  "devDependencies": {
+    "@julr/unocss-preset-heropatterns": "^1.0.2",
+    "@unocss/reset": "^0.58.0",
+    "unocss": "^0.58.0"
+  }
 }
